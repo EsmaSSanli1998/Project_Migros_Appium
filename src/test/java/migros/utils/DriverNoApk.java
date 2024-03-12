@@ -30,8 +30,7 @@ public class DriverNoApk {//.setUdid("R58N527PKNJ")
             UiAutomator2Options optionsNoApk = new UiAutomator2Options()
                     //.setApp(appUrlNoApk)
                      .setAppPackage("com.sec.android.app.launcher")
-                    .setAppActivity("com.sec.android.app.launcher.activities.LauncherActivity")
-                    ;
+                    .setAppActivity("com.sec.android.app.launcher.activities.LauncherActivity")                    ;
 
 
             driverNoApk = new AndroidDriver(serviceNoApk.getUrl(), optionsNoApk);
