@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = "html:raporlar/CucumberRapor.html",
         features = "src/test/resources/features",
         glue = {"migros/stepdefs", "migros/hooks"},
-        tags = "",
+        tags = "TC001_APPIUM_Failed",
         dryRun = false,
         monochrome = true
 

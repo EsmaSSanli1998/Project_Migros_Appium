@@ -4,14 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ef5f8f3-8876-4a46-b2b9-72ac208145e7" name="Changes" comment="" />
+    <list default="true" id="9ef5f8f3-8876-4a46-b2b9-72ac208145e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/raporlar/CucumberRapor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemekNoRegister.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_1_Kupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/utils/NotClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_2_NoRegister.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/esmapages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/EsmaPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/runners/Runner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/runners/Runner2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosStepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/utils/DriverNoApk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/utils/DriverNoApk.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -20,17 +51,133 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2dWABMt8T6ZuPSO5cpnrqnFk1AS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/esmas/IdeaProjects/Project_Migros_Appium/src/test&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\esmas\IdeaProjects\Project_Migros_Appium\src\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\esmas\IdeaProjects\Project_Migros_Appium" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)">
+    <configuration name="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" />
+      <option name="GLUE" value="migros.stepdefs migros.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project_Migros_Appium" />
+      <option name="NAME_FILTER" value="^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu goruntulenmeli\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu goruntulenmeli\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli) (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" />
+      <option name="GLUE" value="migros.stepdefs migros.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project_Migros_Appium" />
+      <option name="NAME_FILTER" value="^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu görüntülenmeli\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu görüntülenmeli\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_2_NoRegister.feature" />
+      <option name="GLUE" value="migros.stepdefs migros.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Project_Migros_Appium" />
+      <option name="NAME_FILTER" value="^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu görüntülenmeli\)$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu görüntülenmeli\)$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_Migros_Appium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="migros.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="migros.runners" />
+      <option name="MAIN_CLASS_NAME" value="migros.runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Project_Migros_Appium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="migros.runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="migros.runners" />
+      <option name="MAIN_CLASS_NAME" value="migros.runners.Runner2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" />
+        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli) (1)" />
+        <item itemvalue="JUnit.Runner2" />
+        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" />
+        <item itemvalue="JUnit.Runner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -41,5 +188,8 @@
       <updated>1710113325773</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
