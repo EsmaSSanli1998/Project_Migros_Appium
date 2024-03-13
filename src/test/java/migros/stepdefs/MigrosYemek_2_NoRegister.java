@@ -4,10 +4,10 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.*;
 import io.cucumber.java.en.When;
 
-public class MigrosYemekNoRegister {
+public class MigrosYemek_2_NoRegister {
 
 
-    MigrosYemekNoRegister MigrosYemekNoRegister = new MigrosYemekNoRegister();
+    MigrosYemek_2_NoRegister MigrosYemekNoRegister = new MigrosYemek_2_NoRegister();
 
 
 
