@@ -8,14 +8,14 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     And giris yap butonuna tiklanir
     When telefon numarasi girilir
     And SMS kodu girilir
-    When Kirvem Tantuni & Doner, Fatih (Mimar Hayrettin Mah.) dukkanindan Bol Soslu Zurna Tavuk Doner Durum iki tane siparis edilir
+    When Pizza Bulls, Fatih (Molla Gurani Mah) Buyuk Boy Pepperoni Pizza, Normal Hamur, Kenar Sos Istemiyorum secilir
     And sepet gidilir
     And sepeti onayla butonuna tiklanir
     Then 60 TL ve 40 TL indirim kuponu goruntulenmeli
 
 
   @TC002_APPIUM_Passed
-  Scenario: TC02 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)
+  Scenario: TC02 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)
     Given migros uygulamasina giris yapilir
     When insan simgesine tiklanir
     And uye ol veya giris yapilir sekmesine tiklanir

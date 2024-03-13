@@ -4,13 +4,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import migros.pages.EsmaPages;
-import migros.utils.DriverNoApk;
+import migros.pages.MigrosYemekPages;
 
 public class MigrosYemek_1_Kupon {
 
 
-    EsmaPages esmaPages = new EsmaPages();
+    MigrosYemekPages migrosYemeke = new MigrosYemekPages();
 
 
     @Given("migros uygulamasina giris yapilir")
@@ -65,13 +64,16 @@ public class MigrosYemek_1_Kupon {
     }
 
 
-    @When("Kirvem Tantuni & Doner, Fatih \\(Mimar Hayrettin Mah.) dukkanindan Bol Soslu Zurna Tavuk Doner Durum iki tane siparis edilir")
-    public void kirvemTantuniDonerFatihMimarHayrettinMahDukkanindanBolSosluZurnaTavukDonerDurumIkiTaneSiparisEdilir() {
+
+    @When("Pizza Bulls, Fatih \\(Molla Gurani Mah) Buyuk Boy Pepperoni Pizza, Normal Hamur, Kenar Sos Istemiyorum secilir")
+    public void pizzaBullsFatihMollaGuraniMahBuyukBoyPepperoniPizzaNormalHamurKenarSosIstemiyorumSecilir() {
 
 
 
 
     }
+
+
 
 
     @And("sepet gidilir")

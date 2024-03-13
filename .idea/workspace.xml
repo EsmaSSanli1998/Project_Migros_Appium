@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef5f8f3-8876-4a46-b2b9-72ac208145e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/raporlar/CucumberRapor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemekNoRegister.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_1_Kupon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/utils/NotClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_2_NoRegister.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/esmapages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/EsmaPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/runners/Runner2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/runners/Runner2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/EsmaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/MigrosYemekPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/utils/DriverNoApk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/utils/DriverNoApk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemekNoRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_2_NoRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_1_Kupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_1_Kupon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +43,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2dWABMt8T6ZuPSO5cpnrqnFk1AS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -170,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" />
-        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli) (1)" />
         <item itemvalue="JUnit.Runner2" />
-        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli) (1)" />
+        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" />
+        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" />
       </list>
     </recent_temporary>
   </component>
