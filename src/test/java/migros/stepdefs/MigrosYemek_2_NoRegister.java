@@ -3,11 +3,12 @@ package migros.stepdefs;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.*;
 import io.cucumber.java.en.When;
+import migros.pages.MigrosYemekPages;
 
 public class MigrosYemek_2_NoRegister {
 
 
-    MigrosYemek_2_NoRegister MigrosYemekNoRegister = new MigrosYemek_2_NoRegister();
+    MigrosYemekPages migrosYemeke = new MigrosYemekPages();
 
 
 
