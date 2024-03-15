@@ -42,6 +42,18 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/loginButton\"]")
     private WebElement girisYapB;
 
+    @AndroidFindBy(id = "//android.widget.TextView[@content-desc=\"Mesajlar, 1 bildirim\"]")
+    private WebElement mesajlarUygulamasi;
+
+    @AndroidFindBy(id = "//android.widget.TextView[@resource-id=\"com.google.android.apps.messaging:id/conversation_snippet\" and @text=\"193021 dogrulama kodu ile islem yapabilirsiniz.\n" +
+            "\n" +
+            "Migros Yemek\n" +
+            "Mersis: 0622052951300016 B002\"]")
+    private WebElement mesajinLocatei;
+
+    @AndroidFindBy(id = "//android.widget.TextView[@content-desc=\"Migros\"]")
+    private WebElement migrosUygulamaLocatei;
+
     @AndroidFindBy(id = "android:id/message_text")
     private WebElement bildirimPanelindekiMesajText;
 
@@ -51,10 +63,16 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/verifyButton\"]")
     private WebElement smsDogrulaB;
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/materialTextViewCampaignRestaurantsItemRestaurantName\" and @text=\"Pizza Bulls, Fatih (Molla Gürani Mah.)\"]")
+    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.inomera.sm:id/textInputEditText\"]")
+    private WebElement aramaKutusuy;
+
+    @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.inomera.sm:id/editTextSearchBar\"]")
+    private WebElement aramaKutusuIkinciy;
+
+    @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id=\"com.inomera.sm:id/recyclerViewRestaurantsResult\"]/android.view.ViewGroup")
     private WebElement pizzaBulls;
 
-    @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/iconAdd\"])[2]")
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/tvMenuTitle\" and @text=\"Büyük Boy Pepperoni Pizza\"]")
     private WebElement buyukBoyPepperoniPizza;
 
     @AndroidFindBy(xpath = "(//android.widget.RadioButton[@resource-id=\"com.inomera.sm:id/radioButtonOption\"])[1]")
@@ -81,26 +99,26 @@ xpath-->en son secenek
 
     //US01_TC02
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/materialTextViewCampaignRestaurantsItemRestaurantName\" and @text=\"Paşa Döner, Fatih (Ali Kuşçu Mah.)\"]")
-    private WebElement pasaDoner;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/materialTextViewAllRestaurantsShrinkedItemRestaurantName\"]")
+    private WebElement RoyalDessert;
 
-    @AndroidFindBy(xpath = "")
-    private WebElement ramazanMenusu;
+    @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/iconAdd\"])[4]")
+    private WebElement tatlininArtisi;
 
-    @AndroidFindBy(xpath = "")
-    private WebElement og;
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/buttonAddCart\"]")
+    private WebElement sepeteEkleB;
 
-    @AndroidFindBy(xpath = "")
-    private WebElement wg;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/navigation_bar_item_small_label_view\" and @text=\"389,70 TL\"]")
+    private WebElement sepeteGitB;
 
-    @AndroidFindBy(xpath = "")
-    private WebElement eg;
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/buttonApproveCart\"]")
+    private WebElement sepetiOnaylaB;
 
-    @AndroidFindBy(xpath = "")
-    private WebElement rg;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/discountName\" and @text=\"40 TL İndirim\"]")
+    private WebElement kirkTLIndirimD;
 
-    @AndroidFindBy(xpath = "")
-    private WebElement hg;
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/discountName\" and @text=\"60 TL İndirim\"]")
+    private WebElement altmisTLIndirimD;
 
     @AndroidFindBy(xpath = "")
     private WebElement jg;

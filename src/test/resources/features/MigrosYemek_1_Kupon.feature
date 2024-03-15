@@ -7,7 +7,11 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     And uye ol veya giris yapilir sekmesine tiklanir
     And giris yap butonuna tiklanir
     When telefon numarasi girilir
+    And Mesajlar uygulamasina gidilir
+    And Gelen SMS kopyalanir
     And SMS kodu girilir
+    When arama kutusuna Pizza Bulls yazilir
+    And Pizza Bulls cikan sonuca tiklanir
     When Pizza Bulls, Fatih (Molla Gurani Mah) Buyuk Boy Pepperoni Pizza, Normal Hamur, Kenar Sos Istemiyorum secilir
     And sepet gidilir
     And sepeti onayla butonuna tiklanir
@@ -21,11 +25,15 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     And uye ol veya giris yapilir sekmesine tiklanir
     And giris yap butonuna tiklanir
     When telefon numarasi girilir
+    And Mesajlarin uygulamasina gidilir
+    And Gelen SMS kopyalanirr
     And SMS kodu girilir
-    When Pasa Doner, Fatih (Ali Kuscu Mah.) dukkanindan Ramazan Menusu iki tane siparis edilir
-    And sepet gidilir
-    And sepeti onayla butonuna tiklanir
-    Then 60 TL ve 40 TL indirim kuponu goruntulenmeli
+    When Arama kutusuna Royal Dessert, Fatih yazilir
+    And Royal Dessert, Fatih Cikan sonuca tiklanir
+    When Royal Dessert, Fatih (Seyyid Omer Mah.) dukkanindan New York Mag Banana siparis edilir
+    And eklenen sepet gidilir
+    And eklenen sepeti onayla butonuna tiklanir
+    Then 60 TL ve 40 TL indirim kuponu goruntulenmelidir
 
 
 

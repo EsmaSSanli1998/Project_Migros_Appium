@@ -4,7 +4,6 @@ import migros.utils.ConfigReader;
 import migros.utils.Driver;
 import io.cucumber.java.*;
 import io.cucumber.java.AfterAll;
-import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 
 public class Hooks {
