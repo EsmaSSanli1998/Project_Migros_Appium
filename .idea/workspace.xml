@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef5f8f3-8876-4a46-b2b9-72ac208145e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/hooks/AfraHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Macro_Pages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/migros/utils/DriverAfra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/EsmaPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/MigrosYemekPages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemekNoRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_2_NoRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_1_Kupon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/MigrosYemek_1_Kupon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +35,12 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dWABMt8T6ZuPSO5cpnrqnFk1AS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -57,6 +53,7 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;AfraFirst&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/esmas/IdeaProjects/Project_Migros_Appium/src/test&quot;
   }
 }</component>

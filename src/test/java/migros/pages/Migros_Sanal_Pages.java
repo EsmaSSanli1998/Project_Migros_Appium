@@ -12,6 +12,7 @@ public class Migros_Sanal_Pages {
     }
     @AndroidFindBy(id =" com.inomera.sm:id/text_input_start_icon")
     private WebElement migrosSearchButton;
+    //com.inomera.sm:id/textInputEditText
     @AndroidFindBy(id ="com.inomera.sm:id/imageViewProfile")
     private WebElement migrosAccountButton;
     @AndroidFindBy(id ="com.inomera.sm:id/action_cart")
