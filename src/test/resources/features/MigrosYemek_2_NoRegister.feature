@@ -1,7 +1,7 @@
-@US002_APPIUM_MigrosYemek2
-Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - İndirim kuponu sepette kullanılabilmeli
-  @TC001_APPIUM_Failed2
-  Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)
+@migrosyemekiki
+Feature: Migros yemek - Musteri Siteye Uye Olmadan Siparis Verebilmeli
+  @migrosregister
+  Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)
     Given migros uygulamasina giris yapilir
     And teslimat adresini belirle sekmesine tiklanir
     And uye olmadan devam et sekmesine tiklanir

@@ -1,6 +1,6 @@
-@US001_APPIUM_MigrosYemek1
+@migrosyemekiki
 Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - Indirim kuponu sepette kullanlabilmeli
-  @TC001_APPIUM_Failed
+  @migroskuponfailed
   Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)
     Given migros uygulamasina giris yapilir
     When insan simgesine tiklanir
@@ -18,7 +18,7 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     Then 60 TL ve 40 TL indirim kuponu goruntulenmeli
 
 
-  @TC002_APPIUM_Passed
+  @migrosyemekpassed
   Scenario: TC02 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)
     Given migros uygulamasina giris yapilir
     When insan simgesine tiklanir
