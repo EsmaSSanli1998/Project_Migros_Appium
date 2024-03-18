@@ -22,15 +22,16 @@ public class DriverNoApk {//.setUdid("R58N527PKNJ")
                     + File.separator + "src"
                     + File.separator + "test"
                     + File.separator + "resources"
-                    + File.separator + "apps"
+                    //+ File.separator + "apps"
                     //+ File.separator + getProperty("apkName")
 
                     ;
 
             UiAutomator2Options optionsNoApk = new UiAutomator2Options()
                     //.setApp(appUrlNoApk)
-                     .setAppPackage("com.sec.android.app.launcher")
-                    .setAppActivity("com.sec.android.app.launcher.activities.LauncherActivity")                    ;
+                     .setAppPackage("com.inomera.sm")
+                    .setAppActivity("com.inomera.sm.ui.home.HomeActivity")
+                    ;
 
 
             driverNoApk = new AndroidDriver(serviceNoApk.getUrl(), optionsNoApk);
@@ -58,6 +59,8 @@ public class DriverNoApk {//.setUdid("R58N527PKNJ")
     public static void serverKapatNoApk(){
         serviceNoApk.stop();
     }
+
+
 
 
 

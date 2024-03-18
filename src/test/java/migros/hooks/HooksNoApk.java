@@ -17,11 +17,6 @@ public class HooksNoApk {
     }
 
 
- //   @Before
-  //  public void setUp(){
-
-
-    //}
 
     @After
     public void tearDownNoAPk(){
@@ -38,4 +33,6 @@ public class HooksNoApk {
         DriverNoApk.serverKapatNoApk();
 
     }
+
+
 }
