@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef5f8f3-8876-4a46-b2b9-72ac208145e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/hooks/AfraHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Macro_Pages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/migros/utils/DriverAfra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/migrosSanalMarket_01.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +19,13 @@
       <list>
         <option value="Class" />
       </list>
+    </option>
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="OPTIONS">
+      <set>
+        <option value="REBASE" />
+      </set>
     </option>
   </component>
   <component name="Git.Settings">
@@ -65,16 +69,15 @@
       <recent name="C:\Users\esmas\IdeaProjects\Project_Migros_Appium" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)">
-    <configuration name="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: migrosSanalMarket_01">
+    <configuration name="Feature: migrosSanalMarket_01" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/MigrosYemek_1_Kupon.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/migrosSanalMarket_01.feature" />
       <option name="GLUE" value="migros.stepdefs migros.hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Project_Migros_Appium" />
-      <option name="NAME_FILTER" value="^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu goruntulenmeli\)$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01 \| Indirim kuponu test edilir\(60 TL ve 40 TL indirim kuponu goruntulenmeli\)$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: migrosSanalMarket_01" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -158,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: migrosSanalMarket_01" />
         <item itemvalue="JUnit.Runner2" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli) (1)" />
         <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu görüntülenmeli)" />
-        <item itemvalue="Cucumber Java.Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)" />
       </list>
     </recent_temporary>
   </component>
