@@ -6,72 +6,76 @@ import migros.utils.DriverNoApk;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-public class Migros_Sanal_Pages {
-    public Migros_Sanal_Pages() {
+public class migrosSanalPages {
+    public migrosSanalPages() {
         PageFactory.initElements(new AppiumFieldDecorator(DriverNoApk.getDriverNoApk()), this);
     }
     @AndroidFindBy(id ="com.inomera.sm:id/shapeableBottomMButton")
-    private WebElement migrosAnaEkranButton;
+    public WebElement migrosAnaEkranButton;
     @AndroidFindBy(xpath ="(//android.view.ViewGroup[@resource-id=\"com.inomera.sm:id/serviceSelectionConstraintLayout\"])[1]")
-    private WebElement migrosSanalMarketKırılımıButton;
+    public WebElement migrosSanalMarketKırılımıButton;
     @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/iv_image\"])[1]")
-    private WebElement migrosMacroOnlineKırılımıButton;
+    public WebElement migrosMacroOnlineKırılımıButton;
     @AndroidFindBy(id ="com.inomera.sm:id/textInputEditText")
-    private WebElement migrosSearchButton;
+    public WebElement migrosSearchButton;
+    @AndroidFindBy(xpath ="(//androidx.cardview.widget.CardView[@resource-id=\"com.inomera.sm:id/add_to_cart_button\"])[2]/android.view.ViewGroup/android.widget.ImageView")
+    public WebElement migrostozsekerekleButton;
+    @AndroidFindBy(xpath ="(//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/iv_image\"])[3]")
+    public WebElement migrosmuzusepeteekleButton;
     @AndroidFindBy(id ="com.inomera.sm:id/imageViewProfile")
-    private WebElement migrosAccountButton;
+    public WebElement migrosAccountButton;
     @AndroidFindBy(id ="com.inomera.sm:id/action_cart")
-    private WebElement sepeteEkleButton;
+    public WebElement sepeteEkleButton;
     @AndroidFindBy(xpath ="//android.widget.TextView[@resource-id='com.inomera.sm:id/text'' and @text='Üye Ol veya Giriş Yap']")
-    private WebElement uyeOlveyagirisyapButton;
+    public WebElement uyeOlveyagirisyapButton;
     @AndroidFindBy(id ="com.inomera.sm:id/loginButton")
-    private WebElement girisyapButton;
+    public WebElement girisyapButton;
     @AndroidFindBy(xpath ="//android.widget.TextView[@resource-id='com.inomera.sm:id/helloTextView']")
-    private WebElement telnumButton;
+    public WebElement telnumButton;
     @AndroidFindBy(xpath ="(//android.view.ViewGroup[@resource-id='com.inomera.sm:id/custom_account_button'])[1]")
-    private WebElement girisyap2Button;
+    public WebElement girisyap2Button;
     @AndroidFindBy(xpath ="//android.widget.TextView[@resource-id='com.inomera.sm:id/helloTextView'']")
-    private WebElement smskoduDogrulamakoduyazButton;
+    public WebElement smskoduDogrulamakoduyazButton;
     @AndroidFindBy(xpath ="(//android.view.ViewGroup[@resource-id='com.inomera.sm:id/custom_account_button'])[1]")
-    private WebElement smskoduDogrulamaButton;
+    public WebElement smskoduDogrulamaButton;
     @AndroidFindBy(id ="com.inomera.sm:id/storePickSubTitleTextView")
-    private WebElement magazadanTeslimAlacagımButton;
+    public WebElement magazadanTeslimAlacagımButton;
     @AndroidFindBy(xpath="//android.widget.TextView[@text='Adresime Gelsin']")
-    private WebElement adresimeGelsinButton;
+    public WebElement adresimeGelsinButton;
     @AndroidFindBy(id="com.inomera.sm:id/discountFabTextView")
-    private WebElement sehirSecIzmirButton;
+    public WebElement sehirSecIzmirButton;
     @AndroidFindBy(id="")
-    private WebElement ılceSecKarsıyakaButton;
+    public WebElement ılceSecKarsıyakaButton;
     @AndroidFindBy(xpath="(//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/navigation_bar_item_icon_view\"])[4]")
-    private WebElement sepeteGitButton;
+    public WebElement sepeteGitButton;
     @AndroidFindBy(xpath="(//android.widget.TextView[@text=\"Anasayfa\"])[1]")
-    private WebElement adresimButton;
+    public WebElement adresimButton;
     @AndroidFindBy(id="com.inomera.sm:id/shapeableBottomMButton")
-    private WebElement sepetimeDevametButton;
+    public WebElement sepetimeDevametButton;
     @AndroidFindBy(accessibility="248,09 TL")
-    private WebElement sepetiOnaylaButton;
+    public WebElement sepetiOnaylaButton;
     @AndroidFindBy(id="com.inomera.sm:id/continueButton")
-    private WebElement devamEtButton;
+    public WebElement devamEtButton;
     @AndroidFindBy(id="com.inomera.sm:id/useAsInvoiceAddressCheckbox")
-    private WebElement faturaAdresiOlaraktaKullanButton;
+    public WebElement faturaAdresiOlaraktaKullanButton;
     @AndroidFindBy(id="com.inomera.sm:id/radioButtonScheduledDeliveryChoice")
-    private WebElement randevuluTeslimatButton;
+    public WebElement randevuluTeslimatButton;
     @AndroidFindBy(xpath="//android.widget.TextView[@resource-id=\"com.inomera.sm:id/radio_text\" and @text=\"12:30 - 14:30\"]")
-    private WebElement saat12301430Button;
+    public WebElement saat12301430Button;
     @AndroidFindBy(id="com.inomera.sm:id/continueButton")
-    private WebElement devamEt2Button;
+    public WebElement devamEt2Button;
     @AndroidFindBy(id="com.inomera.sm:id/radioButtonOtherPayment")
-    private WebElement farklıOdemeYontemıButton;
+    public WebElement farklıOdemeYontemıButton;
     @AndroidFindBy(xpath=" (//android.view.ViewGroup[@resource-id=\"com.inomera.sm:id/clMain\"])[3]")
-    private WebElement krediBankakartiButton;
+    public WebElement krediBankakartiButton;
     @AndroidFindBy(id="com.inomera.sm:id/btnPaymentContinue")
-    private WebElement devamEt3Button;
+    public WebElement devamEt3Button;
     @AndroidFindBy(id="com.inomera.sm:id/cbPriorInformationCondition")
-    private WebElement onBılgıOnayButton;
+    public WebElement onBılgıOnayButton;
     @AndroidFindBy(id="com.inomera.sm:id/cbDistanceSalesAgreement")
-    private WebElement mesafeliSatısSozOnayButton;
+    public WebElement mesafeliSatısSozOnayButton;
     @AndroidFindBy(id="com.inomera.sm:id/btnCheckoutButton")
-    private WebElement odemeYapButton;
+    public WebElement odemeYapButton;
 
 
 

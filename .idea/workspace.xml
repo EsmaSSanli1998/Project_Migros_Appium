@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ef5f8f3-8876-4a46-b2b9-72ac208145e7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/migrosSanalMarket_01.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/pages/Migros_Sanal_Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/pages/migrosSanalPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/stepdefs/sanalMarketStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/stepdefs/sanalMarketStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/migros/utils/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/migros/utils/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

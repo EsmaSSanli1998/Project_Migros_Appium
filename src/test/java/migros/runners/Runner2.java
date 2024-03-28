@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         plugin = "html:raporlar/CucumberRapor.html",
         features = "src/test/resources/features",
         glue = {"migros/stepdefs", "migros/hooks"},
-        tags = "@migroskuponfailed",
+        tags = "@migrossepet",
         dryRun = false,
         monochrome = true
 
