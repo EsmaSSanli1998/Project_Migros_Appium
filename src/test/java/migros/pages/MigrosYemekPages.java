@@ -20,6 +20,7 @@ xpath-->en son secenek
         PageFactory.initElements(new AppiumFieldDecorator(DriverNoApk.getDriverNoApk()), this);
     }
 
+    //BILDIRIMLER
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/permissionButton\"]")
     public WebElement bildirimleriEtkinlestir;
 
@@ -62,6 +63,12 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/loginButton\"]")
     public WebElement girisYapB;
 
+    @AndroidFindBy(xpath = "(//android.widget.RelativeLayout[@resource-id=\"com.google.android.apps.messaging:id/conversation_text_content\"])[1]")
+    public WebElement mesajaGirmek;
+
+    @AndroidFindBy(xpath = "(//android.widget.LinearLayout[@resource-id=\"com.google.android.apps.messaging:id/message_text_and_info\"])[7]")
+    public WebElement mesajlocatei;
+
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.inomera.sm:id/otpNumberTextInputEditText\"]")
     public WebElement smsDogrulamaBoxy;
 
@@ -76,7 +83,7 @@ xpath-->en son secenek
 
     @AndroidFindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@resource-id=\"com.inomera.sm:id/recyclerViewRestaurantsResult\"]/android.view.ViewGroup")
     public WebElement pizzaBulls;
-/*
+
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/tvMenuTitle\" and @text=\"Büyük Boy Pepperoni Pizza\"]")
     public WebElement buyukBoyPepperoniPizza;
 
@@ -97,6 +104,8 @@ xpath-->en son secenek
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/discountPrice\"]")
     public WebElement altmisTLindirimdogrula;
+
+
 
 
     //US01_TC02
@@ -122,11 +131,9 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/discountName\" and @text=\"60 TL İndirim\"]")
     public WebElement altmisTLIndirimD;
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/imgClose\"]")
+    public WebElement reklam;
 
-
-
-
-    */
 
 
     //US02_TC01
@@ -187,10 +194,7 @@ xpath-->en son secenek
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@text=\"Başka Bir Adres Seç\"]")
     public WebElement baskaBirAdresSecYazisiDogrula;
-/*
 
-
- */
 
 
 }
