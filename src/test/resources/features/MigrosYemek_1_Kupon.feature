@@ -26,7 +26,7 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     And giris yap butonuna tiklanir
     When telefon numarasi girilir
     And Mesajlarin uygulamasina gidilir
-    And Gelen SMS kopyalanirr
+    And Gelen SMS kopyalanir
     And SMS kodu girilir
     When Arama kutusuna Royal Dessert, Fatih yazilir
     And Royal Dessert, Fatih Cikan sonuca tiklanir
