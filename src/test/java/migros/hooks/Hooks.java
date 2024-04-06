@@ -10,7 +10,7 @@ public class Hooks {
 
     //before_or_after_all()
 
-    @BeforeAll
+//    @BeforeAll
     public static void beforeAll(){
         Driver.serverBaslat(ConfigReader.getProperty("localIPAdres"), Integer.parseInt(ConfigReader.getProperty("localPort")));
 

@@ -10,7 +10,7 @@ public class HooksNoApk {
 
     //before_or_after_all()
 
-    @BeforeAll
+ //   @BeforeAll
     public static void beforeAllNoApk(){
         DriverNoApk.serverBaslatNoApk(ConfigReader.getProperty("localIPAdres"), Integer.parseInt(ConfigReader.getProperty("localPort")));
 

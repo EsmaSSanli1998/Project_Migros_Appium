@@ -1,10 +1,10 @@
 package migros.hooks;
 
-import io.cucumber.java.After;
-import io.cucumber.java.AfterAll;
-import io.cucumber.java.BeforeAll;
+import io.cucumber.java.*;
 import migros.utils.ConfigReader;
+import migros.utils.Driver;
 import migros.utils.DriverAfra;
+import org.openqa.selenium.OutputType;
 
 public class AfraHooks {
     @BeforeAll
@@ -13,26 +13,31 @@ public class AfraHooks {
 
     }
 
+//@Before
+//public void setUp(){
 
-    //   @Before
-    //  public void setUp(){
+//}
 
 
-    //}
-
-    @After
-    public void tearDown_A(){
-
-        DriverAfra.uygulamayiKapat_A();
-
+  /*  @After
+    public static void tearDown_A(Scenario scenario){
+if (scenario.isFailed()) {
+    byte[] screenshotAs = Driver.getDriver().getScreenshotAs(OutputType.BYTES);
+scenario.attach(screenshotAs, "image/png", "Hata Resmi");
+Driver.getDriver().terminateApp("");
+}
+        Driver.getDriver().terminateApp("");
 
     }
+/*
 
 
-    @AfterAll
-    public static void afterAll_A(){
+   */
+   @AfterAll
+ public static void afterAll_A(){
+       DriverAfra.uygulamayiKapat_A();
+       DriverAfra.serverKapat_A();
 
-        DriverAfra.serverKapat_A();
 
     }
 }

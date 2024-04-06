@@ -200,8 +200,8 @@ public class MigrosYemek_2_NoRegister {
     }
 
 
-
-    @Then("sayfaya yonlendirildigi dogrulanir")
+//Bu method iki kere yazıldığı için dublicate hatası veriyor bunu yoruma alacağim
+/*    @Then("sayfaya yonlendirildigi dogrulanir")
     public void sayfaya_yonlendirildigi_dogrulanir() {
 
         if (migrosYemekPages.baskaBirAdresSecYazisiDogrula.isDisplayed()) {
@@ -216,6 +216,8 @@ public class MigrosYemek_2_NoRegister {
     }
 
 
+
+ */
 
 
 

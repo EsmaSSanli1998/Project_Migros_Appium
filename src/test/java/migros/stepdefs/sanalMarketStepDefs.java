@@ -10,12 +10,12 @@ import migros.utils.ReusableMethods;
 
 public class sanalMarketStepDefs  {
 
-    migrosSanalPages migros_Sanal_Pages = new migrosSanalPages();
+    migrosSanalPages migrosSanalPages = new migrosSanalPages();
     KeyEvent home = new KeyEvent(AndroidKey.HOME);
-    @When("Search butonuna tıklanir")
+    @When("Search butonuna tiklanir")
     public void search_butonuna_tıklanir() {
-     migros_Sanal_Pages.migrosSanalMarketKırılımıButton.click();
-     migros_Sanal_Pages.migrosSearchButton.click();
+
+     migrosSanalPages.migrosSearchButton.click();
 
         System.out.println("Search butonu göründü");
         ReusableMethods.bekle(2);
@@ -23,7 +23,7 @@ public class sanalMarketStepDefs  {
 
     @Then("sayfaya yonlendirildigi dogrulanir")
     public void sayfaya_yonlendirildigi_dogrulanir() {
-        if (migros_Sanal_Pages.migrosSearchButton.isDisplayed()) {
+        if (migrosSanalPages.migrosSearchButton.isDisplayed()) {
             System.out.println("YÖNLENDIRILMEDI");
         }else {
             System.out.println("sayfaya_yonlendirildigi_dogrulanir");
@@ -31,57 +31,61 @@ public class sanalMarketStepDefs  {
     }
     @Then("indirimli ürün sayfasına gidilir")
     public void indirimli_ürün_sayfasına_gidilir() {
-   migros_Sanal_Pages.migrosSearchButton.sendKeys("bor toz seker");
-   migros_Sanal_Pages.migrostozsekerekleButton.click();
-   migros_Sanal_Pages.migrosSearchButton.sendKeys("muz");
-   migros_Sanal_Pages.migrosmuzusepeteekleButton.click();
+   migrosSanalPages.migrosSearchButton.sendKeys("bor toz seker");
+   migrosSanalPages.migrostozsekerekleButton.click();
+   migrosSanalPages.migrosSearchButton.sendKeys("muz");
+   migrosSanalPages.migrosmuzusepeteekleButton.click();
     }
     @Then("ürünler sepete eklenir")
     public void ürünler_sepete_eklenir() {
 
        // migros_Sanal_Pages.sepeteEkleButton.click();
     }
-    @Then("sepete git butonuna tiklanır")
-    public void sepete_git_butonuna_tiklanır() {
-      migros_Sanal_Pages.sepeteGitButton.click();
+    @Then("sepete git butonuna tiklanir")
+    public void sepete_git_butonuna_tiklanir() {
+      migrosSanalPages.sepeteGitButton.click();
 
     }
-    @Then("sepeti onayla butonuna tıklanir")
-    public void sepeti_onayla_butonuna_tıklanir() {
-     migros_Sanal_Pages.sepetimeDevametButton.click();
-     migros_Sanal_Pages.sepetiOnaylaButton.click();
+    @Then("sepeti onayla butonuna tiklanir2")
+    public void sepeti_onayla_butonuna_tıklanir2() {
+     migrosSanalPages.sepetimeDevametButton.click();
+     migrosSanalPages.sepetiOnaylaButton.click();
     }
     @Then("devam et butonuna tiklanir")
     public void devam_et_butonuna_tiklanir() {
-        migros_Sanal_Pages.devamEtButton.click();
+        migrosSanalPages.devamEtButton.click();
     }
     @Then("teslimat saati secilir")
     public void teslimat_saati_secilir() {
-    migros_Sanal_Pages.faturaAdresiOlaraktaKullanButton.click();
-    migros_Sanal_Pages.randevuluTeslimatButton.click();
-    migros_Sanal_Pages.saat12301430Button.click();
+    migrosSanalPages.faturaAdresiOlaraktaKullanButton.click();
+    migrosSanalPages.randevuluTeslimatButton.click();
+    migrosSanalPages.saat12301430Button.click();
     }
     @Then("devam et2 butonuna tiklanir")
     public void devam_et2_butonuna_tiklanir() {
-    migros_Sanal_Pages.devamEt2Button.click();
+    migrosSanalPages.devamEt2Button.click();
     }
     @Then("ödeme yöntemi belirlenir")
     public void ödeme_yöntemi_belirlenir() {
-     migros_Sanal_Pages.farklıOdemeYontemıButton.click();
-     migros_Sanal_Pages.krediBankakartiButton.click();
-     migros_Sanal_Pages.devamEt3Button.click();
+     migrosSanalPages.farklıOdemeYontemıButton.click();
+     migrosSanalPages.krediBankakartiButton.click();
+     migrosSanalPages.devamEt3Button.click();
     }
     @Then("koşul ve sözlesmeler onaylanir")
     public void koşul_ve_sözlesmeler_onaylanir() {
-    migros_Sanal_Pages.onBılgıOnayButton.click();
-    migros_Sanal_Pages.mesafeliSatısSozOnayButton.click();
+    migrosSanalPages.onBılgıOnayButton.click();
+    migrosSanalPages.mesafeliSatısSozOnayButton.click();
     }
     @Then("ödeme yap butonuna tiklanir")
     public void ödeme_yap_butonuna_tiklanir() {
-        migros_Sanal_Pages.odemeYapButton.click();
+        migrosSanalPages.odemeYapButton.click();
     }
 
 
+    @When("Sanal alisveris sayfasina gidilmeli")
+    public void sanalAlisverisSayfasinaGidilmeli() {
 
-
+        migrosSanalPages.migrosAnaEkranButton.click();git 
+        migrosSanalPages.migrosSanalMarketKırılımıButton.click();
+    }
 }
