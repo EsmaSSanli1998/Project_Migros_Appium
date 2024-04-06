@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        plugin = "html:raporlar/CucumberRapor.html",
+        plugin = "html:raporlar/CucumberRaporlarim.html",
         features = "src/test/resources/features",
         glue = {"migros/stepdefs", "migros/hooks"},
         tags = "@migrosyemekpassed",
