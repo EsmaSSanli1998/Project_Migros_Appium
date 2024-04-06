@@ -39,10 +39,23 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "(//android.widget.FrameLayout[@resource-id=\"com.inomera.sm:id/serviceSelectionFrameLayout\"])[3]")
     public WebElement migrosYemekSekmesi;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Mesajlar\"]")
+    public WebElement mesajlar;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.google.android.apps.messaging:id/conversation_name\" and @text=\"MIGROS\"]")
+    public WebElement migrosMesajinaTikla;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.google.android.apps.messaging:id/message_text\" and @text=\"012695 dogrulama kodu ile islem yapabilirsiniz.\n" +
+            "\n" +
+            "Migros Yemek\n" +
+            "Mersis: 0622052951300016 B002\"]")
+    public WebElement gelenMesaj;
 
+    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Migros\"]")
+    public WebElement migrosUygulamasiUygulamalarda;
 
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"Migros\"]")
+    public WebElement migrosUygulamasiArkaPlan;
 
 
     //US01_TC01
@@ -63,6 +76,12 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/loginButton\"]")
     public WebElement girisYapB;
 
+    @AndroidFindBy(xpath = "//android.widget.EditText[@text=\"0(5__) ___-____\"]")
+    public WebElement telefonNumB2;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@text=\"Giriş Yap\"]")
+    public WebElement girisYapB2;
+
     @AndroidFindBy(xpath = "(//android.widget.RelativeLayout[@resource-id=\"com.google.android.apps.messaging:id/conversation_text_content\"])[1]")
     public WebElement mesajaGirmek;
 
@@ -74,6 +93,16 @@ xpath-->en son secenek
 
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/verifyButton\"]")
     public WebElement smsDogrulaB;
+
+    @AndroidFindBy(xpath = "//android.widget.EditText")
+    public WebElement smsDogrulamaBoxy2;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@text=\"Doğrula\"]")
+    public WebElement smsDogrulaB2;
+
+    @AndroidFindBy(xpath = "(//android.widget.TextView[contains(@text, 'dogrulama kodu ile islem yapabilirsiniz.')])[last()]")
+    public WebElement sonMesaj;
+
 
     @AndroidFindBy(xpath = "//android.widget.EditText[@resource-id=\"com.inomera.sm:id/textInputEditText\"]")
     public WebElement aramaKutusuy;

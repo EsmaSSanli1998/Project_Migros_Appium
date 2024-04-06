@@ -1,7 +1,5 @@
 package migros.stepdefs;
 
-import com.google.common.collect.ImmutableMap;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
 import io.cucumber.java.en.And;
@@ -11,18 +9,14 @@ import io.cucumber.java.en.When;
 import migros.pages.MigrosYemekPages;
 import migros.utils.DriverNoApk;
 import migros.utils.ReusableMethods;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.remote.RemoteWebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
-import static org.junit.Assert.assertEquals;
 
 public class MigrosYemek_1_Kupon {
 
+    String sonMesaj;
 
     MigrosYemekPages migrosYemeke = new MigrosYemekPages();
     KeyEvent home = new KeyEvent(AndroidKey.HOME);
@@ -102,17 +96,25 @@ public class MigrosYemek_1_Kupon {
     //telefon numarasi girdikten sonra home butonuna tiklanir, mesajlar uygulamsinin locateine tiklanir
     //mesajin locatine tiklanir, mesaj kopyalanir ve migros uygulamasina dönülür.
 
+
+
+        /*
+        locateler degismis yenisini yazdim
         migrosYemeke.telefonNumB.sendKeys("5436383913");
         bekle(2);
         migrosYemeke.girisYapB.click();
         bekle(2);
 
 
-        DriverNoApk.getDriverNoApk().pressKey(home);
+
+         */
+        migrosYemeke.telefonNumB2.sendKeys("436383913");
+        bekle(2);
+        migrosYemeke.girisYapB2.click();
         bekle(2);
 
-
-
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),154,772);
+        bekle(2);
 
 
 
@@ -123,13 +125,16 @@ public class MigrosYemek_1_Kupon {
     @And("Mesajlar uygulamasina gidilir")
     public void mesajlarUygulamasinaGidilir() {
 
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),543,2137);
+        DriverNoApk.getDriverNoApk().pressKey(home);
         bekle(2);
 
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),484,380);
-        bekle(4);
+
+       // migrosYemeke.mesajlar.click();
+       // bekle(2);
 
 
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),531,2127);
+        bekle(2);
 
 
 
@@ -140,47 +145,90 @@ public class MigrosYemek_1_Kupon {
     @And("Gelen SMS kopyalanir")
     public void gelenSMSKopyalanir() {
 
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),137,1776);
-        bekle(4);
+
+
+        migrosYemeke.migrosMesajinaTikla.click();
+        bekle(2);
+
+         sonMesaj = migrosYemeke.sonMesaj.getText().split(" ")[0];
+
 /*
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),430,1662);
+        //migros mesajindaki dogrulama kodunun konumu
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),136,1777);
         bekle(2);
 
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),142,1717);
-        bekle(4);
-
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),430,1571);
+        //kopyala butonu
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),429,1709);
         bekle(2);
 
-        DriverNoApk.getDriverNoApk().pressKey(home);
-        bekle(3);
 
-        System.out.println("gelenSMSKopyalanir");
+
 
  */
+/*
+
+        String message = migrosYemeke.gelenMesaj.getText();
+        System.out.println("Dogrulama deneme"+message);
+
+
+        //migros mesajindaki dogrulama kodunun konumu
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),136,1867);
+        bekle(2);
+
+        //kopyala butonu
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),429,1792);
+        bekle(2);
+ */
+        System.out.println("gelenSMSKopyalanir");
+
+
     }
 
 
     @And("SMS kodu girilir")
     public void smsKoduGirilir() {
 
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),233,2330);
-        bekle(2);
-
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),40,1000);
-
-
+        DriverNoApk.getDriverNoApk().pressKey(home);
         bekle(2);
 
 
+        //telefon anasayfasini yukari kaydir
+        //ReusableMethods.swipeGestureKoordinat(DriverNoApk.getDriverNoApk(),500,100,500,500,"up",3.0,500);
 
-        migrosYemeke.smsDogrulamaBoxy.click();
+
+        //sol ekran tusuna tikla
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),241,2334);
+
+        bekle(3);
+
+
+
+        /*
+        migros uygulamasina tikla
+
+        migrosYemeke.migrosUygulamasiArkaPlan.click();
+        bekle(3);
+
+        */
+
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),60,971);
+
+        bekle(3);
+
+       // migrosYemeke.smsDogrulamaBoxy.click();
+
+        migrosYemeke.smsDogrulamaBoxy2.click();
         bekle(2);
 
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),484,1470);
+       // ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),484,1470);
+
+
+        migrosYemeke.smsDogrulamaBoxy2.sendKeys(sonMesaj);
         bekle(2);
 
-        migrosYemeke.smsDogrulaB.click();
+       // migrosYemeke.smsDogrulaB.click();
+
+        migrosYemeke.smsDogrulaB2.click();
         bekle(3);
 
         System.out.println("smsKoduGirilir");
@@ -192,13 +240,24 @@ public class MigrosYemek_1_Kupon {
     @When("arama kutusuna Pizza Bulls yazilir")
     public void aramaKutusunaPizzaBullsYazilir() {
 
+        WebElement reklamyeni = DriverNoApk.getDriverNoApk().findElement(By.id("com.inomera.sm:id/imgClose"));
+
+        if (reklamyeni.isDisplayed()) {
+            reklamyeni.click();
+
+        }else{
+            System.out.println("REKLAM YOK");
+        }
+
         ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),384,511);
         bekle(4);
-
+/*
         ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),530,174);
         bekle(2);
 
 
+
+ */
         migrosYemeke.aramaKutusuIkinciy.sendKeys("Pizza Bulls");
         bekle(2);
 
@@ -290,71 +349,6 @@ public class MigrosYemek_1_Kupon {
 
     //US01_TC02
 
-    @And("Mesajlarin uygulamasina gidilir")
-    public void mesajlarinUygulamasinaGidilir() {
-
-
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),543,2137);
-        bekle(2);
-
-        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),484,380);
-        bekle(4);
-
-
-
-
-
-        System.out.println("mesajlar Uygulamasina Gidilir");
-
-
-    }
-
-
-   // @And("Gelen SMS kopyalanirr")
-    //public void gelenSMSKopyalanirr() {
-
-
-    //ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),137,1776);
-    //bekle(4);
-
-    // ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),430,1662);
-    //bekle(2);
-
-    //ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),142,1717);
-    //bekle(4);
-//
-    // ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),430,1571);
-    //  bekle(2);
-
-
-    //  DriverNoApk.getDriverNoApk().pressKey(home);
-
-
-    // ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),233,2330);
-    // bekle(2);
-//
-    //ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),40,1000);
-
-
-    // bekle(2);
-
-
-
-    //  migrosYemeke.smsDogrulamaBoxy.click();
-    //  bekle(2);
-
-    // ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),484,1470);
-    // bekle(2);
-
-    // migrosYemeke.smsDogrulaB.click();
-    //  bekle(3);
-
-    //  System.out.println("smsKoduGirilir");
-
-
-
-
-    // }
 
     @When("Arama kutusuna Royal Dessert, Fatih yazilir")
     public void aramaKutusunaRoyalDessertFatihYazilir() {
