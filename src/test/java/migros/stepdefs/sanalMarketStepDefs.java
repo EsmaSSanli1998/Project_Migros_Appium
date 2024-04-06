@@ -39,7 +39,7 @@ public class sanalMarketStepDefs  {
     @Then("ürünler sepete eklenir")
     public void ürünler_sepete_eklenir() {
 
-       // migros_Sanal_Pages.sepeteEkleButton.click();
+      migrosSanalPages.sepeteEkleButton.click();
     }
     @Then("sepete git butonuna tiklanir")
     public void sepete_git_butonuna_tiklanir() {
