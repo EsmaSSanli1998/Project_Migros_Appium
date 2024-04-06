@@ -85,7 +85,7 @@ public class sanalMarketStepDefs  {
     @When("Sanal alisveris sayfasina gidilmeli")
     public void sanalAlisverisSayfasinaGidilmeli() {
 
-        migrosSanalPages.migrosAnaEkranButton.click();git 
+        migrosSanalPages.migrosAnaEkranButton.click();
         migrosSanalPages.migrosSanalMarketKırılımıButton.click();
     }
 }
