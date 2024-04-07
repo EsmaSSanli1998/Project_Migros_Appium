@@ -35,7 +35,7 @@ public class DriverAfra {
 
         public static void serverBaslat_A(String ipAdres, int port){
             service_Afra = new AppiumServiceBuilder()
-                 //   .withAppiumJS(new File("C:\\Users\\Lenova\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+                    .withAppiumJS(new File("C:\\Users\\Lenova\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
                     .withIPAddress(ipAdres)
                     .usingPort(port)
                     .build();
