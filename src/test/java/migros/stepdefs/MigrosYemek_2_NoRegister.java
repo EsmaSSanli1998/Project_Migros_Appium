@@ -201,13 +201,13 @@ public class MigrosYemek_2_NoRegister {
 
 
 
-    @Then("sayfaya yonlendirildigi dogrulanir")
-    public void sayfaya_yonlendirildigi_dogrulanir() {
+    @Then("sayfaya yonlendirildigi dogrulanire")
+    public void sayfaya_yonlendirildigi_dogrulanire() {
 
         if (migrosYemekPages.baskaBirAdresSecYazisiDogrula.isDisplayed()) {
             System.out.println("YÖNLENDIRILMEDI");
         }else {
-            System.out.println("sayfaya_yonlendirildigi_dogrulanir");
+            System.out.println("sayfaya_yonlendirildigi_dogrulanire");
         }
 
 
