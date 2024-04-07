@@ -19,9 +19,11 @@ public class MigrosYemek_2_NoRegister {
 
     @And("teslimat adresini belirle sekmesine tiklanir")
     public void teslimat_adresini_belirle_sekmesine_tiklanir() {
-        bekle(2);
 
-        //BILDIRIMLER
+
+        /*
+        BILDIRIMLER
+
         migrosYemekPages.bildirimleriEtkinlestir.click();
         bekle(2);
 
@@ -38,9 +40,9 @@ public class MigrosYemek_2_NoRegister {
         bekle(2);
 
         migrosYemekPages.migrosYemekSekmesi.click();
-        bekle(2);
+        bekle(4);
 
-
+*/
        // ---------------------------------------------------------
 
 
