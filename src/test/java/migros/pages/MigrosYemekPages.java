@@ -173,7 +173,7 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/logoutContinueButton\"]")
     public WebElement uyeOlmadanDevamEt;
 
-    @AndroidFindBy(id = "com.inomera.sm:id/btnSave")
+    @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/btnSave\"]")
     public WebElement isaretledigimKonumuEkleB;
 
     @AndroidFindBy(xpath = "(//android.widget.ImageButton[@content-desc=\"Açılır menüyü göster\"])[1]")
