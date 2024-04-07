@@ -10,7 +10,7 @@ Feature: Migros yemek - Musteri Siteye Uye Olmadan Siparis Verebilmeli
     And evet adresim dogru butonuna tiklanir
     When alisveris sayfasina gidilmeli
     And sepet e tiklanir, alisverise basla butonuna tiklanir
-    Then sayfaya yonlendirildigi dogrulanir
+    Then sayfaya yonlendirildigi dogrulanire
 
 
 

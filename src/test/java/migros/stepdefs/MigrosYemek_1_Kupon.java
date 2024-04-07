@@ -109,9 +109,9 @@ public class MigrosYemek_1_Kupon {
 
          */
         migrosYemeke.telefonNumB2.sendKeys("436383913");
-        bekle(2);
+        bekle(4);
         migrosYemeke.girisYapB2.click();
-        bekle(2);
+        bekle(4);
 
         ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),154,772);
         bekle(2);
@@ -240,14 +240,7 @@ public class MigrosYemek_1_Kupon {
     @When("arama kutusuna Pizza Bulls yazilir")
     public void aramaKutusunaPizzaBullsYazilir() {
 
-        WebElement reklamyeni = DriverNoApk.getDriverNoApk().findElement(By.id("com.inomera.sm:id/imgClose"));
 
-        if (reklamyeni.isDisplayed()) {
-            reklamyeni.click();
-
-        }else{
-            System.out.println("REKLAM YOK");
-        }
 
         ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),384,511);
         bekle(4);
@@ -353,10 +346,10 @@ public class MigrosYemek_1_Kupon {
     @When("Arama kutusuna Royal Dessert, Fatih yazilir")
     public void aramaKutusunaRoyalDessertFatihYazilir() {
 
-
+/*
 
         migrosYemeke.reklam.click();
-        bekle(100);
+        bekle(2);
 
         migrosYemeke.cizgilerMigrosYemekIcin.click();
         bekle(2);
@@ -372,6 +365,11 @@ public class MigrosYemek_1_Kupon {
         ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),530,174);
         bekle(2);
 
+
+
+ */
+        ReusableMethods.clickGestureKonum(DriverNoApk.getDriverNoApk(),384,511);
+        bekle(4);
 
         migrosYemeke.aramaKutusuIkinciy.sendKeys("Royal Dessert Fatih");
         bekle(2);
