@@ -41,8 +41,12 @@ public class DriverNoApk {//.setUdid("R58N527PKNJ")
     }
 
     public static void serverBaslatNoApk(String ipAdres, int port){
+    String serverUrl = System.getProperty("user.home")
+            +"\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js";
+
         serviceNoApk = new AppiumServiceBuilder()
-                .withAppiumJS(new File("C:\\Users\\esmas\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+                //.withAppiumJS(new File("C:\\Users\\esmas\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
+                .withAppiumJS(new File(serverUrl))
                 .withIPAddress(ipAdres)
                 .usingPort(port)
                 .build();
@@ -59,6 +63,8 @@ public class DriverNoApk {//.setUdid("R58N527PKNJ")
     public static void serverKapatNoApk(){
         serviceNoApk.stop();
     }
+
+
 
 
 
