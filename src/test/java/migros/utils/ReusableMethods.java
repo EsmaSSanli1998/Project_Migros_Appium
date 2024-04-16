@@ -2,9 +2,12 @@ package migros.utils;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -132,6 +135,46 @@ public class ReusableMethods {
         ));
     }
 
+
+    public static void scroll(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    public static void click(WebElement element) {
+        try {
+            element.click();
+        } catch (Exception e) {
+            JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+            js.executeScript("arguments[0].click();", element);
+        }
+    }
+
+    public static void ddmVisibleText(WebElement ddm, String secenek) {
+        Select select = new Select(ddm);
+        select.selectByVisibleText(secenek);
+    }
+
+
+    public static void ddmIndex(WebElement ddm, int index) {
+        Select select = new Select(ddm);
+        select.selectByIndex(index);
+    }
+
+    public static void ddmValue(WebElement ddm, String secenek) {
+        Select select = new Select(ddm);
+        select.selectByValue(secenek);
+    }
+
+    public static void sendKeysJS(WebElement element, String text) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].value='" + text + "'", element);
+    }
+    public static void moveToElement(WebElement element){
+        Actions actions =new Actions(Driver.getDriver());
+        actions.moveToElement(element).perform();
+        bekle(2);
+    }
 
 
 

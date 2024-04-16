@@ -145,6 +145,12 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "(//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/iconAdd\"])[4]")
     public WebElement tatlininArtisi;
 
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/buttonAdd\"]")
+    public WebElement tatlininArtisiiki;
+
+    @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/buttonAdd\"]")
+    public WebElement tatlininArtisiikiyine;
+
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/buttonAddCart\"]")
     public WebElement sepeteEkleB;
 
@@ -152,7 +158,7 @@ xpath-->en son secenek
     public WebElement sepeteGitB;
 
     @AndroidFindBy(xpath = "//android.widget.Button[@resource-id=\"com.inomera.sm:id/buttonApproveCart\"]")
-    public WebElement sepetiOnaylaB;
+    public WebElement sepetionaylakismi;
 
     @AndroidFindBy(xpath = "//android.widget.TextView[@resource-id=\"com.inomera.sm:id/discountName\" and @text=\"40 TL İndirim\"]")
     public WebElement kirkTLIndirimD;
@@ -163,7 +169,8 @@ xpath-->en son secenek
     @AndroidFindBy(xpath = "//android.widget.ImageView[@resource-id=\"com.inomera.sm:id/imgClose\"]")
     public WebElement reklam;
 
-
+    @AndroidFindBy(xpath = "//android.widget.FrameLayout[@content-desc=\"129,90 TL\"]")
+    public WebElement sepetyine;
 
     //US02_TC01
 

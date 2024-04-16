@@ -16,7 +16,7 @@ public class HooksNoApk {
 
     }
 
-
+/*
 
     @After
     public void tearDownNoAPk(){
@@ -34,5 +34,7 @@ public class HooksNoApk {
 
     }
 
+
+ */
 
 }
