@@ -4,6 +4,7 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
   Scenario: TC01 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)
     Given migros uygulamasina giris yapilir
     When insan simgesine tiklanir
+    And migros yemek sekmesi
     And uye ol veya giris yapilir sekmesine tiklanir
     And giris yap butonuna tiklanir
     When telefon numarasi girilir
@@ -15,13 +16,14 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     When Pizza Bulls, Fatih (Molla Gurani Mah) Buyuk Boy Pepperoni Pizza, Normal Hamur, Kenar Sos Istemiyorum secilir
     And sepet gidilir
     And sepeti onayla butonuna tiklanir
-    Then 70 TL ve 70 TL indirim kuponu goruntulenmeli
+    Then 60 TL ve 40 TL indirim kuponu goruntulenmeli
 
 
   @migrosyemekpassed
   Scenario: TC02 | Indirim kuponu test edilir(60 TL ve 40 TL indirim kuponu goruntulenmeli)
     Given migros uygulamasina giris yapilir
     When insan simgesine tiklanir
+    And migros yemek sekmesi
     And uye ol veya giris yapilir sekmesine tiklanir
     And giris yap butonuna tiklanir
     When telefon numarasi girilir
@@ -33,7 +35,7 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     When Royal Dessert, Fatih (Seyyid Omer Mah.) dukkanindan New York Mag Banana siparis edilir
     And eklenen sepet gidilir
     And eklenen sepeti onayla butonuna tiklanir
-    Then 70 TL ve 70 TL indirim kuponu goruntulenmelidir
+    Then 60 TL ve 40 TL indirim kuponu goruntulenmelidir
 
 
 

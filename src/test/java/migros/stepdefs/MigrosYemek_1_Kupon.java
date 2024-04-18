@@ -52,11 +52,7 @@ public class MigrosYemek_1_Kupon {
         migrosYemeke.uygulamayiKullanirken.click();
         bekle(2);
 
-        migrosYemeke.cizgilerMigrosYemekIcin.click();
-        bekle(2);
 
-        migrosYemeke.migrosYemekSekmesi.click();
-        bekle(2);
 
 
 
@@ -72,6 +68,18 @@ public class MigrosYemek_1_Kupon {
 
 
 
+    @And("migros yemek sekmesi")
+    public void migrosYemekSekmesi() {
+
+
+        migrosYemeke.cizgilerMigrosYemekIcin.click();
+        bekle(2);
+
+        migrosYemeke.migrosYemekSekmesi.click();
+        bekle(2);
+
+
+    }
 
     @And("uye ol veya giris yapilir sekmesine tiklanir")
     public void uyeOlVeyaGirisYapilirSekmesineTiklanir() {
@@ -534,7 +542,6 @@ public class MigrosYemek_1_Kupon {
             throw new RuntimeException(e);
         }
     }
-
 
 
 }
