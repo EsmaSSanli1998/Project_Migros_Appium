@@ -29,6 +29,16 @@ public class MigrosYemek_1_Kupon {
         System.out.println("Giris Yapildi");
         bekle(3);
 
+
+
+
+    }
+
+
+
+    @When("insan simgesine tiklanir")
+    public void insanSimgesineTiklanir() {
+
         //BILDIRIMLER
         migrosYemeke.bildirimleriEtkinlestir.click();
         bekle(2);
@@ -49,13 +59,6 @@ public class MigrosYemek_1_Kupon {
         bekle(2);
 
 
-
-    }
-
-
-
-    @When("insan simgesine tiklanir")
-    public void insanSimgesineTiklanir() {
 
         migrosYemeke.kullaniciAdam.click();
         bekle(2);

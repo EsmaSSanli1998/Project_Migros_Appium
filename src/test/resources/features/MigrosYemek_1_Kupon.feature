@@ -15,7 +15,7 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     When Pizza Bulls, Fatih (Molla Gurani Mah) Buyuk Boy Pepperoni Pizza, Normal Hamur, Kenar Sos Istemiyorum secilir
     And sepet gidilir
     And sepeti onayla butonuna tiklanir
-    Then 60 TL ve 40 TL indirim kuponu goruntulenmeli
+    Then 70 TL ve 70 TL indirim kuponu goruntulenmeli
 
 
   @migrosyemekpassed
@@ -33,7 +33,7 @@ Feature: Migros yemek - Kupon sepette goruntulenebilmesi(alt limit tutuyor) - In
     When Royal Dessert, Fatih (Seyyid Omer Mah.) dukkanindan New York Mag Banana siparis edilir
     And eklenen sepet gidilir
     And eklenen sepeti onayla butonuna tiklanir
-    Then 60 TL ve 40 TL indirim kuponu goruntulenmelidir
+    Then 70 TL ve 70 TL indirim kuponu goruntulenmelidir
 
 
 
